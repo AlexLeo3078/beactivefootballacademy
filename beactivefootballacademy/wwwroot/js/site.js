@@ -1,4 +1,16 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+if (document.getElementById('galleria') != null) {
+    Galleria.configure({
+        transition: "fade",
+        imageCrop: false,
+        lightbox: true,
+        responsive: true,
+        showInfo: true,
+        height: 600,
+    });
 
-// Write your JavaScript code.
+    Galleria.run('#galleria', {
+        height: parseInt($('#galleria').css('height')),
+        wait: true
+    });
+}

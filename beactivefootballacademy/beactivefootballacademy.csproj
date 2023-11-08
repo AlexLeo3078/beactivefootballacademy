@@ -15,7 +15,6 @@
     <Content Remove="wwwroot\gallery\pic14.jpeg" />
     <Content Remove="wwwroot\gallery\pic15.jpeg" />
     <Content Remove="wwwroot\gallery\pic16.jpeg" />
-    <Content Remove="wwwroot\gallery\pic17.jpeg" />
     <Content Remove="wwwroot\gallery\pic18.jpeg" />
     <Content Remove="wwwroot\gallery\pic2.jpeg" />
     <Content Remove="wwwroot\gallery\pic3.jpeg" />
@@ -52,9 +51,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\gallery\pic16.jpeg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="wwwroot\gallery\pic17.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="wwwroot\gallery\pic18.jpeg">

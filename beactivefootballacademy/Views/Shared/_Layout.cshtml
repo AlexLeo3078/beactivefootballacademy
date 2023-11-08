@@ -6,7 +6,7 @@
 	<title>@ViewData["Title"] - be active football academy</title>
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>	
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
@@ -21,41 +21,41 @@
 					<ul class="nav nav-pills flex-md-column flex-row flex-nowrap flex-shrink-1 flex-md-grow-0 flex-grow-1 mb-md-auto mb-0 justify-content-end align-items-center align-items-md-start" id="menu">
 						<li class="nav-item">
 							<a href="@Url.Action("Index", "Home")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-house"></i><span class="ms-1 d-none d-md-inline">Home</span>
+								<i class="fs-3 bi-house"></i><span class="ms-1 d-none d-md-inline">Home</span>
 							</a>
 						</li>
 						<li>
 							<a href="@Url.Action("Index", "Product")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-grid"></i><span class="ms-1 d-none d-md-inline">Products</span>
+								<i class="fs-3 bi-grid"></i><span class="ms-1 d-none d-md-inline">Products</span>
 							</a>
 						</li>
 						<li>
 							<a href="@Url.Action("Index", "Gallery")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-camera"></i><span class="ms-1 d-none d-md-inline">Gallery</span>
+								<i class="fs-3 bi-camera"></i><span class="ms-1 d-none d-md-inline">Gallery</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="@Url.Action("Index", "Team")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-people"></i><span class="ms-1 d-none d-md-inline">The A-Team</span>
+								<i class="fs-3 bi-people"></i><span class="ms-1 d-none d-md-inline">The A-Team</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="@Url.Action("Index", "AboutUs")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-info-circle"></i><span class="ms-1 d-none d-md-inline">About us</span>
+								<i class="fs-3 bi-info-circle"></i><span class="ms-1 d-none d-md-inline">About us</span>
 							</a>
 						</li>
 						<li>
 							<a href="@Url.Action("Index", "ContactUs")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-7 bi-envelope"></i><span class="ms-1 d-none d-md-inline">Contact us</span>
+								<i class="fs-3 bi-envelope"></i><span class="ms-1 d-none d-md-inline">Contact us</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="col-sm-12 col-md-9">
+			<div class="col-sm-12 col-md-8">
 				<main class="row">
 					<div class="col pt-4">
 						@Html.Partial("~/Views/Logo/Index.cshtml")
@@ -63,89 +63,95 @@
 					</div>
 				</main>
 			</div>
-			<!-- Footer -->
-			<footer class="text-center text-lg-start bg-light text-muted">
-				<!-- Section: Social media -->
-				<section class="d-flex justify-content-center p-4 border-bottom">
-					<!-- Left -->
-					<div class="me-5 d-none d-lg-block">
-						<span>Get connected with us on social networks:</span>
-					</div>
-					<div>
-						<a href="https://www.facebook.com/profile.php?id=100083073291647" class="me-4 text-reset">
-							<iconify-icon icon="logos:facebook" width="32" height="32"></iconify-icon>
-						</a>
-					</div>
-					<div>
-						<a href="https://www.youtube.com/channel/UC_OVY2_01d84rF-Id7COWwg" class="me-4 text-reset">
-							<iconify-icon icon="logos:youtube-icon" width="32" height="32"></iconify-icon>
-						</a>
-					</div>
-					<div>
-						<a href="https://www.instagram.com/beactivefootballacademy/" class="me-4 text-reset">
-							<iconify-icon icon="skill-icons:instagram" width="32" height="32"></iconify-icon>
-						</a>
-					</div>
-					<div>
-						<a href="https://www.linkedin.com/in/lukasz-stachowiak-74318423b/" class="me-4 text-reset">
-							<iconify-icon icon="skill-icons:linkedin" width="32" height="32"></iconify-icon>
-						</a>
-					</div>
-					<div>
-						<a href='https://www.tiktok.com/@@bafateam22oficial' class="me-4 text-reset">
-							<iconify-icon icon="logos:tiktok-icon" width="32" height="32"></iconify-icon>
-						</a>
-					</div>
-				</section>
-				<!-- Section: Social media -->
-				<!-- Section: Links  -->
-				<section class="">
-					<div class="container text-center text-md-start mt-5">
-						<!-- Grid row -->
-						<div class="row mt-3">
-							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-								<!-- Links -->
-								<h6 class="text-uppercase fw-bold mb-4">
-									Useful links
-								</h6>
-								<p>
-									<a href="@Url.Action("Index", "Privacy")" class="text-reset">Privacy</a>
-								</p>
-								<p>
-									<a href="@Url.Action("Index", "TAC")" class="text-reset">Terms and Conditions</a>
-								</p>
-							</div>
-							<!-- Grid column -->
-							<!-- Grid column -->
-							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-								<!-- Links -->
-								<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-								<p><i class="fas fa-home me-3"></i> 24 Candy St, Peterborough, PE2 9RE</p>
-								<p>
-									<i class="fas fa-envelope me-3"></i>
-									contact@beactivefootballacademy.com
-								</p>
-								<p><i class="fas fa-phone me-3"></i> + 44 078 6147 4717</p>
-							</div>
-							<!-- Grid column -->
-						</div>
-						<!-- Grid row -->
-					</div>
-				</section>
-				<!-- Section: Links  -->
-				<!-- Copyright -->
-				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-					© 2022 Copyright: Be Active Football Academy
-				</div>
-				<!-- Copyright -->
-			</footer>
-			<!-- Footer -->
+
 		</div>
+
+		<!-- Footer -->
+		<footer class="text-center text-lg-start bg-light text-muted">
+			<!-- Section: Social media -->
+			<section class="d-flex justify-content-center p-4 border-bottom">
+				<!-- Left -->
+				<div class="me-5 d-none d-lg-block">
+					<span>Get connected with us on social networks:</span>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/profile.php?id=100083073291647" class="me-4 text-reset">
+						<iconify-icon icon="logos:facebook" width="32" height="32"></iconify-icon>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.youtube.com/channel/UC_OVY2_01d84rF-Id7COWwg" class="me-4 text-reset">
+						<iconify-icon icon="logos:youtube-icon" width="32" height="32"></iconify-icon>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/beactivefootballacademy/" class="me-4 text-reset">
+						<iconify-icon icon="skill-icons:instagram" width="32" height="32"></iconify-icon>
+					</a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/lukasz-stachowiak-74318423b/" class="me-4 text-reset">
+						<iconify-icon icon="skill-icons:linkedin" width="32" height="32"></iconify-icon>
+					</a>
+				</div>
+				<div>
+					<a href='https://www.tiktok.com/@@bafateam22oficial' class="me-4 text-reset">
+						<iconify-icon icon="logos:tiktok-icon" width="32" height="32"></iconify-icon>
+					</a>
+				</div>
+			</section>
+			<!-- Section: Social media -->
+			<!-- Section: Links  -->
+			<section class="">
+				<div class="container text-center text-md-start mt-5">
+					<!-- Grid row -->
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Useful links
+							</h6>
+							<p>
+								<a href="@Url.Action("Index", "Privacy")" class="text-reset">Privacy</a>
+							</p>
+							<p>
+								<a href="@Url.Action("Index", "TAC")" class="text-reset">Terms and Conditions</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+							<p><i class="fas fa-home me-3"></i> 24 Candy St, Peterborough, PE2 9RE</p>
+							<p>
+								<i class="fas fa-envelope me-3"></i>
+								contact@beactivefootballacademy.com
+							</p>
+							<p><i class="fas fa-phone me-3"></i> + 44 078 6147 4717</p>
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row -->
+				</div>
+			</section>
+			<!-- Section: Links  -->
+			<!-- Copyright -->
+			<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+				© 2022 Copyright: Be Active Football Academy
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- Footer -->
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/classic/galleria.classic.min.js"></script>
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

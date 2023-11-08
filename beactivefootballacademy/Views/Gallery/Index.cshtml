@@ -1,56 +1,30 @@
 ﻿@model GalleryModel
 
-<div class="gallery-container">
+<div class="container">
 	<div class="row">
 		<div class="col">
-			<div id="carousel" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="gallery/pic1.jpeg" class="d-block w-100 img-gallery" alt="...">
-					</div>
-					@foreach (var image in Model.ImagePath)
-					{
-						<div class="carousel-item">
-							<img src="~/gallery/@image" class="d-block w-100 img-gallery" alt="...">
-						</div>
-					}
+			<div class="card text-left">
+				<div class="card-body">
+					<h5 class="card-title">Some awesome pictures of our teams!</h5>
+					<p class="card-text">
+						Add some info here.
+					</p>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon carousel-control-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="gallery-container">
+<div class="container">
 	<div class="row">
-		<div class="col">
-			<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="gallery/pic1.jpeg" class="d-block w-100 img-gallery" alt="...">
-					</div>
-					@foreach (var image in Model.ImagePath)
-					{
-						<div class="carousel-item">
-							<img src="gallery/@image" class="d-block w-100 img-gallery" alt="...">
-						</div>
-					}
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-					<span class="carousel-control-next-icon carousel-control-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+		<div class="col-sm-12">
+			<div id="galleria" class="galleria">
+				@foreach (var image in Model.ImagePath)
+				{
+					<a href="gallery/@image">
+						<img src="gallery/@image">
+					</a>
+				}
 			</div>
 		</div>
 	</div>
