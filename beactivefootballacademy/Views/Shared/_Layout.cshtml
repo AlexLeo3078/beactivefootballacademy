@@ -13,49 +13,52 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="sidebar col-12 col-md-3 col-xl-2 px-md-2 px-0 bg-dark d-flex sticky-top">
-				<div class="d-flex flex-md-column flex-row flex-grow-1 align-items-center align-items-md-start px-3 pt-2 text-white">
-					<a href="/" class="d-none d-sm-block d-flex align-items-center pb-md-3 mb-md-0 me-md-auto text-white text-decoration-none">
-						<span class="fs-5">Be Active Football Academy</span>
-					</a>
-					<ul class="nav nav-pills flex-md-column flex-row flex-nowrap flex-shrink-1 flex-md-grow-0 flex-grow-1 mb-md-auto mb-0 justify-content-end align-items-center align-items-md-start" id="menu">
-						<li class="nav-item">
-							<a href="@Url.Action("Index", "Home")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-house"></i><span class="ms-1 d-none d-md-inline">Home</span>
-							</a>
-						</li>
-						<li>
-							<a href="@Url.Action("Index", "Product")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-grid"></i><span class="ms-1 d-none d-md-inline">Products</span>
-							</a>
-						</li>
-						<li>
-							<a href="@Url.Action("Index", "Gallery")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-camera"></i><span class="ms-1 d-none d-md-inline">Gallery</span>
-							</a>
-						</li>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Be Active Football Academy</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="@Url.Action("Index", "Home")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-house"></i><span class="ms-2">Home</span>
+								</a>
+							</li>
+							<li>
+								<a href="@Url.Action("Index", "Product")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-grid"></i><span class="ms-2">Products</span>
+								</a>
+							</li>
+							<li>
+								<a href="@Url.Action("Index", "Gallery")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-camera"></i><span class="ms-2">Gallery</span>
+								</a>
+							</li>
 
-						<li>
-							<a href="@Url.Action("Index", "Team")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-people"></i><span class="ms-1 d-none d-md-inline">The A-Team</span>
-							</a>
-						</li>
+							<li>
+								<a href="@Url.Action("Index", "Team")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-people"></i><span class="ms-2">The A-Team</span>
+								</a>
+							</li>
 
-						<li>
-							<a href="@Url.Action("Index", "AboutUs")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-info-circle"></i><span class="ms-1 d-none d-md-inline">About us</span>
-							</a>
-						</li>
-						<li>
-							<a href="@Url.Action("Index", "ContactUs")" class="nav-link nav-link-current-colour px-md-0 px-2">
-								<i class="fs-3 bi-envelope"></i><span class="ms-1 d-none d-md-inline">Contact us</span>
-							</a>
-						</li>
-					</ul>
+							<li>
+								<a href="@Url.Action("Index", "AboutUs")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-info-circle"></i><span class="ms-2">About us</span>
+								</a>
+							</li>
+							<li>
+								<a href="@Url.Action("Index", "ContactUs")" class="nav-link nav-link-current-colour px-md-0 px-lg-2 px-2">
+									<i class="fs-3 bi-envelope"></i><span class="ms-2">Contact us</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</nav>
 
-			<div class="col-sm-12 col-md-8">
+			<div class="col-sm-12 col-md-12">
 				<main class="row">
 					<div class="col pt-4">
 						@Html.Partial("~/Views/Logo/Index.cshtml")

@@ -28,8 +28,15 @@ html {
     background-color: white;
 }
 
-.sidebar {
-    background-image: linear-gradient(to left bottom, rgb(0, 162, 228), black, rgb(250, 197, 7), rgb(0, 162, 228), black, rgb(250, 197, 7), rgb(0, 162, 228), black, rgb(250, 197, 7), rgb(0, 162, 228) 25%, black, rgb(250, 197, 7)) !important;
+.navbar {
+    padding: 2rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .card-body {
@@ -105,10 +112,6 @@ html {
     }
 }
 
-.nav-link-current-colour {
-    color: currentColor;
-}
-
 .container-contact-us {
     height: calc(100vh);
 }
@@ -144,8 +147,4 @@ html {
 
 .galleria-lightbox-close {
     font-size: 2rem;
-}
-
-live-preview-root {
-    display: none;
 }
