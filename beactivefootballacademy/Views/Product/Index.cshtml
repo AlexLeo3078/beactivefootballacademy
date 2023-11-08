@@ -1,0 +1,28 @@
+﻿@model List<beactivefootballacademy.DataModel.Root>
+
+<div class="row album py-5">
+	<div class="col-8 container">
+
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+			@foreach (var root in Model)
+			{
+				@foreach (var product in root.result.sync_variants)
+				{
+					<div class="col">
+						<div class="card shadow-sm">
+							<img src="@product.product.image" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">@product.name</h5>
+								<p class="card-text">@product.product.name</p>
+								<blockquote class="card-text">£@product.retail_price</blockquote>
+						 
+								<button class="btn btn-primary" type="button">Buy</button>
+							 
+							</div>
+						</div>
+					</div>
+				}
+			}
+		</div>
+	</div>
+</div>
