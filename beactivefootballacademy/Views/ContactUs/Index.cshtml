@@ -1,0 +1,47 @@
+﻿@model ContactUsModel
+
+<div class="container container-contact-us">
+	<form asp-controller="ContactUs" asp-action="SendMessage" method="post" class="contact-us-form">
+
+		<div class="row">
+			<div class="col-3">
+				<label class="label" asp-for="EmailAddress"></label>
+			</div>
+			<div class="col-12">
+				<input type="email" asp-for="EmailAddress" class=" width-50" required="true" />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3">
+				<label class="label" asp-for="Name"></label>
+			</div>
+			<div class="col-12">
+				<input asp-for="Name" class=" width-50" required="true" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<label class="label" asp-for="Message"></label>
+			</div>
+			<div class="col-12">
+				<textarea asp-for="Message" class="width-50" required="true"></textarea>
+			</div>
+		</div>
+		
+		<hr>
+
+		<div>
+			<input type="submit" value="Send" />
+		</div>
+
+
+		<div class="alert alert-success m-3" role="alert" @Model.ShowFeedBack.success>
+			Your email has been sent successfully - we will replay to you as soon as possible.
+		</div>
+		<div class="alert alert-danger m-3" role="alert" @Model.ShowFeedBack.failure>
+			Something went wrong sending email - please try again later.
+		</div>
+
+	</form>
+</div>

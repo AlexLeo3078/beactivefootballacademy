@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\gallery\pic1.jpeg" />
+    <Content Remove="wwwroot\gallery\pic10.jpeg" />
+    <Content Remove="wwwroot\gallery\pic11.jpeg" />
+    <Content Remove="wwwroot\gallery\pic12.jpeg" />
+    <Content Remove="wwwroot\gallery\pic13.jpeg" />
+    <Content Remove="wwwroot\gallery\pic14.jpeg" />
+    <Content Remove="wwwroot\gallery\pic15.jpeg" />
+    <Content Remove="wwwroot\gallery\pic16.jpeg" />
+    <Content Remove="wwwroot\gallery\pic17.jpeg" />
+    <Content Remove="wwwroot\gallery\pic18.jpeg" />
+    <Content Remove="wwwroot\gallery\pic2.jpeg" />
+    <Content Remove="wwwroot\gallery\pic3.jpeg" />
+    <Content Remove="wwwroot\gallery\pic5.jpeg" />
+    <Content Remove="wwwroot\gallery\pic6.jpeg" />
+    <Content Remove="wwwroot\gallery\pic8.jpeg" />
+    <Content Remove="wwwroot\gallery\pic9.jpeg" />
+    <Content Remove="wwwroot\images\david.jpeg" />
+    <Content Remove="wwwroot\images\logo.jpeg" />
+    <Content Remove="wwwroot\images\lukasz.jpeg" />
+    <Content Remove="wwwroot\images\main.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wwwroot\images\david.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\images\logo.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\images\lukasz.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\images\main.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wwwroot\gallery\pic1.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic10.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic11.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic12.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic13.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic14.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic15.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic16.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic17.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic18.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic2.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic3.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic5.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic6.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic8.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\gallery\pic9.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
