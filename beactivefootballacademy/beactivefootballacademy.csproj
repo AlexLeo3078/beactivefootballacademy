@@ -80,6 +80,9 @@
     <Content Update="wwwroot\images\david.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\images\gallery.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\images\logo.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

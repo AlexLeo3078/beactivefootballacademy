@@ -142,3 +142,15 @@ html, body {
         width: 100%;
         overflow: hidden;
     }
+
+    .banner .inner-gallery {
+        background-image: url("/images/gallery.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }

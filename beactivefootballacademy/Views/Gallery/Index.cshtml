@@ -1,31 +1,38 @@
 ﻿@model GalleryModel
 
-<div class="container">
+<div class="banner">
+	<div class="inner-gallery">
+	</div>
+</div>
+
+<div class="container container-main">
 	<div class="row">
-		<div class="col">
-			<div class="card text-left">
-				<div class="card-body">
-					<h5 class="card-title">Some awesome pictures of our teams!</h5>
-					<p class="card-text">
-						Add some info here.
-					</p>
+		<div class="col-12 m-2">
+			<h3 style="color: cornflowerblue;">Check us out!!!</h3>
+			<h5>Be Active Football Academy</h5>
+
+			<div>
+				<p>
+					Please check out some of our pictures - remember to smile for the air-drone!!!
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="galleria" class="galleria">
+					@foreach (var image in Model.ImagePath)
+					{
+						<a href="gallery/@image">
+							<img src="gallery/@image">
+						</a>
+					}
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<div id="galleria" class="galleria">
-				@foreach (var image in Model.ImagePath)
-				{
-					<a href="gallery/@image">
-						<img src="gallery/@image">
-					</a>
-				}
-			</div>
-		</div>
-	</div>
-</div>
