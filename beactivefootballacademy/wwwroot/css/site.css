@@ -45,6 +45,7 @@ html {
 }
 
 .card {
+    box-shadow: 5px 10px #888888;
     margin: 1rem;
 }
 
