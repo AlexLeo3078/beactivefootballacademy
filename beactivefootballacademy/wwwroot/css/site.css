@@ -1,10 +1,5 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: rgb(0, 162, 228);
-}
-
-
-html {
     font-size: 14px;
 }
 
@@ -25,7 +20,7 @@ html {
 }
 
 .white-background {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .navbar {
@@ -74,32 +69,6 @@ html {
     padding: 0;
 }
 
-    .container-main .tag {
-        position: absolute;
-        right: 0px;
-        background-color: white;
-        height: 100%;
-        width: 40%;
-        opacity: 0.7;
-    }
-
-    .container-main .tag-block {
-        margin: 2rem;
-        opacity: 0.9;
-    }
-
-    .container-main .card {
-        margin: 0;
-        padding: 0;
-        top: 20%;
-    }
-
-    .container-main .card-block {
-        margin: 0;
-        padding: 0;
-        top: 20%;
-    }
-
 .container-fluid {
     overflow-x: hidden !important;
     margin: 0;
@@ -111,24 +80,6 @@ html {
         position: relative;
         padding: 1rem;
     }
-}
-
-.container-contact-us {
-    height: calc(100vh);
-}
-
-    .container-contact-us .contact-us-form {
-        background-color: white;
-        border-style: inset;
-        border-width: 1px;
-        border-color: blue;
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-
-.width-50 {
-    width: 50%
 }
 
 #galleria {
@@ -149,3 +100,46 @@ html {
 .galleria-lightbox-close {
     font-size: 2rem;
 }
+
+.banner {
+    padding: 0px;
+    overflow: hidden;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+    .banner .inner {
+        background-image: url('https://img1.wsimg.com/isteam/stock/NBNWjom/');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner .inner-home {
+        background-image: url("/images/main.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner .inner-about {
+        background-image: url("/images/about-us.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }

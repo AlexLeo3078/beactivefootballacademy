@@ -10,6 +10,9 @@ namespace beactivefootballacademy.Models
 		public string EmailAddress;
 		[Required]
 		public string Message;
+		[Required]
+		public string Phone;
+
 		public (string success, string failure) ShowFeedBack { get; set; } = ("hidden", "hidden");
 	}
 }

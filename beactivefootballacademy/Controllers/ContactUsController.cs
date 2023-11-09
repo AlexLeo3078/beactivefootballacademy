@@ -12,13 +12,14 @@ namespace beactivefootballacademy.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult SendMessage(string emailAddress, string message, string name)
+		public IActionResult SendMessage(string emailAddress, string message, string name, string phone)
 		{
 
 			ContactUsModel model = new ContactUsModel
 			{
 				EmailAddress = emailAddress,
 				Name = name,
+				Phone = phone,
 				Message = message,
 				ShowFeedBack = (string.Empty, "hidden")
 			};

@@ -1,47 +1,59 @@
 ﻿@model ContactUsModel
 
-<div class="container container-contact-us">
-	<form asp-controller="ContactUs" asp-action="SendMessage" method="post" class="contact-us-form">
+<div class="banner">
+	<div class="inner">
+	</div>
+</div>
 
-		<div class="row">
-			<div class="col-3">
-				<label class="label" asp-for="EmailAddress"></label>
-			</div>
-			<div class="col-12">
-				<input type="email" asp-for="EmailAddress" class=" width-50" required="true" />
-			</div>
-		</div>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-12 col-lg-6">
+			<h3 style="color: cornflowerblue;">
+				We would like to hear from you.
+			</h3>
+			<h5>Please drop us a line!</h5>
+			<form asp-controller="ContactUs" asp-action="SendMessage">
+				<div class="form-floating mb-3">
+					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+					<label for="floatingInput">Email address</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="floatingPassword" placeholder="Name" required>
+					<label for="floatingPassword">Name</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="floatingPassword" placeholder="Phone" required>
+					<label for="floatingPassword">Phone</label>
+				</div>
+				<div class="form-floating mb-3">
+					<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+					<label for="floatingTextarea">Message</label>
+				</div>
+				<div class="form-floating mb-3">
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
 
-		<div class="row">
-			<div class="col-3">
-				<label class="label" asp-for="Name"></label>
-			</div>
-			<div class="col-12">
-				<input asp-for="Name" class=" width-50" required="true" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<label class="label" asp-for="Message"></label>
-			</div>
-			<div class="col-12">
-				<textarea asp-for="Message" class="width-50" required="true"></textarea>
-			</div>
-		</div>
-		
-		<hr>
+				<div class="alert alert-success form-floating mb-3" role="alert" @Model.ShowFeedBack.success>
+					Your email has been sent successfully - we will replay to you as soon as possible.
+				</div>
+				<div class="alert alert-danger form-floating mb-3" role="alert" @Model.ShowFeedBack.failure>
+					Something went wrong sending email - please try again later.
+				</div>
+			</form>
 
-		<div>
-			<input type="submit" value="Send" />
 		</div>
-
-
-		<div class="alert alert-success m-3" role="alert" @Model.ShowFeedBack.success>
-			Your email has been sent successfully - we will replay to you as soon as possible.
+		<div class="col-12 col-lg-6" style="text-align: justify;">
+			<h3 style="color: cornflowerblue;">Better yet, come and see us!!!</h3>
+			<h5>We value our customers, so feel free to visit during normal business hours.</h5>
+			<h3>Be Active Football Academy</h3>
+			<h3>Hours</h3>
+			<h6>Mon	09:00 – 17:00</h6>
+			<h6>Tue	09:00 – 17:00</h6>
+			<h6>Wed	09:00 – 17:00</h6>
+			<h6>Thu	09:00 – 17:00</h6>
+			<h6>Fri	09:00 – 17:00</h6>
+			<h6>Sat	By appointment only.</h6>
+			<h6>Sun	By appointment only.</h6>
 		</div>
-		<div class="alert alert-danger m-3" role="alert" @Model.ShowFeedBack.failure>
-			Something went wrong sending email - please try again later.
-		</div>
-
-	</form>
+	</div>
 </div>
